@@ -1,7 +1,7 @@
 let cityInput = document.getElementById('city_input');
 let searchBtn = document.getElementById('searchBtn');
 let locationBtn = document.getElementById('locationBtn');
-let api_key ='17e7cc626ac032fdf30b037e4c5b48ba';//'3f0c8f33c62bd15e9eeb80850375a09d'
+let api_key ='Enter API_KEY';
 let currentWeatherCard = document.querySelectorAll('.weather-left .card')[0];
 let fiveDaysForecastCard = document.querySelectorAll('.day-forecast')[0];
 let aqiCard=document.querySelectorAll('.highlights .card')[0];
@@ -231,4 +231,5 @@ searchBtn.addEventListener('click', getCityCoordinates);
 
 locationBtn.addEventListener('click',getUserCoordinates);
 cityInput.addEventListener('keyup',e=>e.key==='Enter' && getCityCoordinates());
+
 window.addEventListener('load',getUserCoordinates);
